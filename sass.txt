@@ -1,0 +1,4 @@
+sass --watch C:\laragon\www\html-project\openbid\assets\scss\main.scss:C:\laragon\www\html-project\openbid\assets\css\main.css
+
+// if minify css
+--style=compressed && postcss

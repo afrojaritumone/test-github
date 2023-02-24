@@ -1,0 +1,78 @@
+@use "common" as *;
+.hero-area{
+  background-size: cover;
+  background-position: center center;
+  padding-top: 255px;
+  padding-bottom: 160px;
+}
+.hero-left-content{
+  .title{
+    position: relative;
+    z-index: 1;
+    .hero-shape-1{
+      position: absolute;
+      z-index: 2;
+      top: -50px;
+      left: -62px;
+    }
+    h1{
+      font-weight: 600;
+      font-size: 75px;
+      line-height: 80px;
+      color: #111111;
+      margin-bottom: 13px;
+    }
+  }
+  .description{
+    p{
+      max-width: 347px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 40px;
+      color: #111111;
+      margin-bottom: 30px;
+    }
+  }
+  .hero-btn{
+    a{
+      display: inline-block;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 15px 48px;
+      background: #FF00AF;
+      backdrop-filter: blur(13.5914px);
+      border-radius: 39px;
+      &:hover{
+        background: #000000;
+      }
+    }
+  }
+}
+
+.hero-thumb-wrap{
+  text-align: right;
+  .hero-circle{
+    display: inline-block;
+    height: 409px;
+    width: 409px;
+    border-radius: 50%;
+    background: rgba(33, 78, 207, 0.06);
+    position: relative;
+    z-index: 1;
+    &:before{
+      content: "";
+      position: absolute;
+      z-index: 2;
+      top: -85px;
+      bottom: -85px;
+      left: -85px;
+      right: -85px;
+      border: 1px solid rgba(255, 0, 175, 0.38);
+      border-radius: 100%;
+
+    }
+  }
+}
